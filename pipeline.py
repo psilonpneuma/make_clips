@@ -12,13 +12,14 @@ outfolder=cfg.config["outfolder"]
 md_fn=cfg.config["metadata_fn"]
 praat=cfg.config["praat"]
 #mk_folders=cfg.config["make_folders"]
-print("Settings:\n")
+print("Started.\nYour settings:")
 for k,v in cfg.config.items():
     print(k,v)
 
 if not os.path.isdir(outfolder):
-    print("Creating output folder,"+outfolder)
-    os.system("mkdir "+outfolder)
+    print("\nCreating default output folder..."+outfolder)
+    os.system("mkdir "+infolder+"output/")
+    os.system("mkdir "+infolder+"output/"+"extracts/")
 #----------------------------------------------------------------------------------------
 # Extract CHN chunks
 print("Extracting CHN chunks from recordings...")
@@ -44,5 +45,3 @@ with open(outfolder+'metadata_praat.txt', 'r') as file:
 			f.writelines(data)
 print("Done.")
 #TODO: add gender
-
-
