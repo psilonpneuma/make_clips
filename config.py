@@ -2,14 +2,9 @@
 
 config = {
 	"python":"python",
-	"working_dir": "/scratch2/csemenzin/lena_elisa/", # working directory
-    "scripts":"/scratch2/csemenzin/lena_elisa/scripts/", 
-    "praat": "praat", # path to praat exe
-    "infolder": "/scratch2/csemenzin/lena_elisa/output/", # folder with its and wav files
-    "outfolder": "/scratch2/csemenzin/lena_elisa/output/extracts/", # folder to extract output
-    "metadata_fn":"MetaData_prova.txt", # metadata filename
-    "make_folders":False
+	"working_dir": "/Users/chiarasemenzin/Desktop/create_temp/", # working directory
+    "infolder": "/Users/chiarasemenzin/Desktop/create_temp/sample_data/", # folder with its and wav files
+    "outfolder": "/Users/chiarasemenzin/Desktop/create_temp/sample_data/output/extracts/", # folder to extract output
+    "metadata_fn":"metadataaaaa.txt", # metadata filename
 }
 
-#import databaseconfig as cfg
-#cfg.config["working_dir"]
